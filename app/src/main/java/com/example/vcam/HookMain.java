@@ -104,7 +104,7 @@ public class HookMain implements IXposedHookLoadPackage {
 
                 HookMain.mMedia.setSurface(HookMain.msurf);
 
-                HookMain.mMedia.setVolume(0, 0);
+                //HookMain.mMedia.setVolume(0, 0);
                 HookMain.mMedia.setLooping(true);
 
                 HookMain.mMedia.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
@@ -185,7 +185,7 @@ public class HookMain implements IXposedHookLoadPackage {
                     }
 
                     HookMain.c2_player.setSurface(HookMain.c2_ori_Surf);
-                    HookMain.c2_player.setVolume(0, 0);
+                    //HookMain.c2_player.setVolume(0, 0);
                     HookMain.c2_player.setLooping(true);
 
                     HookMain.c2_player.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
