@@ -2,10 +2,10 @@
 xposed安卓虚拟摄像头  
 ## 感谢https://github.com/wangwei1237/CameraHook 提供的HOOK思路！！  
 
-# 此版本不会静音，但是release里全是静音的，不静音的下载直达链接 https://github.com/w2016561536/android_virtual_cam/blob/no-silent/app/release/app-release.apk  
+# 此版本不会静音，但是release里全是静音的，直达链接我都放在下面了  
 已加入Camera2支持，抖音测试通过。  
-## 软件对TextureView预览信息替换的视频是 /sdcard/DCIM/Camera/virtual.mp4  
-## 软件对onPreviewFrame预览信息替换的**照片**是 /sdcard/DCIM/Camera/bmp/****.bmp
+### 软件对TextureView预览信息替换的视频是 /sdcard/DCIM/Camera/virtual.mp4  
+### 软件对onPreviewFrame预览信息替换的**照片**是 /sdcard/DCIM/Camera/bmp/****.bmp
  **命名规则**："****.bmp" 是bmp图片，文件命名的规则为：从1000.bmp开始，按帧排序依次为1000.bmp，1001.bmp，1002.bmp……，最少有3张图片，最大不超过999张（超过了的话文件名会多一位），可以使用Premiere将视频转化为BMP。  
  
 ## 具体的使用方法（与主分支相同）：
@@ -21,7 +21,13 @@ xposed安卓虚拟摄像头
 ## Camera2接口有问题？？
 是的，目前Camera2接口的HOOK不是所有应用程序都能生效，部分app报错打开相机失败，如果想停用Camera2接口的HOOK，可在/sdcard/DCIM下创建disable.jpg，以停用此项HOOK
 
-## release无法下载/gitee下载(gitee与github作者同id，同仓库名)？？
-在/app/release/app-release.apk里，下载前请注意分支。
+## release无法下载/gitee下载(gitee与github作者同id，同仓库名)？？  
+在/app/release/app-release.apk，下载前请注意分支。  
+静音（主分支）：GitHub： https://github.com/w2016561536/android_virtual_cam/blob/master/app/release/app-release.apk  
+gitee（中国大陆建议此点）： https://gitee.com/w2016561536/android_virtual_cam/blob/master/app/release/app-release.apk  
+——————————  
+不静音（no-silent分支）：GitHub： https://github.com/w2016561536/android_virtual_cam/blob/no-silent/app/release/app-release.apk   
+gitee（中国大陆建议此点）： https://gitee.com/w2016561536/android_virtual_cam/blob/no-silent/app/release/app-release.apk  
+
 
 # 请勿用于非法用途，任何法律问题与作者无关。
